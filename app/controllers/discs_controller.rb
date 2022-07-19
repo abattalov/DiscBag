@@ -36,6 +36,7 @@ class DiscsController < ApplicationController
   # DELETE /discs/1
   def destroy
     @disc.destroy
+    render json: {message: 'Disc successfully deleted!'}
   end
 
   private
